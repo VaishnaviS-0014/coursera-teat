@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>module2-solution</title>
+</head>
+<style>
+    /*basic style*/
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: white;
+    }
+
+    h1 {
+        margin: 100px;
+        text-align: center;
+        font-family: Helvetica;
+        font-weight: bold;
+        font-size: 175%;
+    }
+
+    section {
+        position: relative;
+        padding: 15px;
+        width: 100%;
+    }
+
+    p {
+        position: relative;
+        clear: right;
+    }
+
+    div {
+        position: relative;
+        background-color: rgb(10, 6, 127);
+        border: 1px solid black;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+    }
+
+    .sub1 {
+        float: right;
+        width: 100px;
+        padding: 5px;
+        margin: 0px;
+        border: 1px solid black;
+        text-align: center;
+        font-size: 125%;
+        font-weight: bold;
+        background-color: rgb(214, 124, 124);
+
+    }
+
+    .sub2 {
+        float: right;
+        color: white;
+        width: 100px;
+        padding: 5px;
+        margin: 0px;
+        border: 1px solid black;
+        text-align: center;
+        font-size: 125%;
+        font-weight: bold;
+        background-color: maroon;
+
+    }
+
+    .sub3 {
+        color: black;
+        float: right;
+        width: 100px;
+        padding: 5px;
+        margin: 0px;
+        border: 1px solid black;
+        text-align: center;
+        font-size: 125%;
+        font-weight: bold;
+        background-color: rgb(223, 212, 121);
+
+    }
+
+    .content {
+        padding: 5px;
+        border: none;
+        background-color: rgb(215, 84, 84);
+        font-family: Helvetica;
+        color: black;
+        margin: 0px;
+        height: 200px;
+        overflow: auto;
+    }
+
+    .row {
+        width: 90%;
+    }
+
+    /*desktop version*/
+    @media (min-width: 992px) {
+        .column-lg-4 {
+            float: left;
+            width: 33.33%;
+        }
+    }
+
+    /*tablet version*/
+    @media (min-width: 768px) and (max-width: 991px) {
+        .colmn-md-6 {
+            float: left;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .colmn-md-12 {
+            float: left;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    /*mobile version*/
+    @media (max-width: 767px) {
+        .colmn-sm-12 {
+            float: left;
+            width: 100%;
+        }
+    }
+</style>
+
+<body>
+    <h1>Our Menu</h1>
+    <section class="column-lg-4 colmn-md-6 colmn-sm-12">
+        <div>
+            <p class="sub1">Chicken</p>
+            <p class="content">
+                The chicken curry is a onion, ginger, garlic & tomato based gravy with spices in which the chicken is stewed. It is very spicy & delicious & hence is my favourite food Chicken can be cooked in various ways into different curries but chicken curry is a very easy recipe even for bachelor & is enjoyed by all.
+                
+            </p>
+        </div>
+    </section>
+    <section class="column-lg-4 colmn-md-6 colmn-sm-12">
+        <div>
+            <p class="sub2">Beef</p>
+            <p class="content">
+                Beef is the meat of cattle (Bos taurus). It is categorized as red meat — a term used for the meat of mammals, which contains higher amounts of iron than chicken or fish. Usually eaten as roasts, ribs, or steaks, beef is also commonly ground or minced. Patties of ground beef are often used in hamburgers.</p>
+        </div>
+    </section>
+    <section class="column-lg-4 colmn-md-12 colmn-sm-12">
+        <div>
+            <p class="sub3">sushi</p>
+            <p class="content">Sushi is made with specially prepared rice, called sumeshi. The rice is mixed with vinegar, salt, and sugar. Sushi is known for having raw or cooked seafood in it, but it sometimes has non-fish foods such as vegetables. Some sushi is wrapped in a sheet of seaweed called nori .</p>
+        </div>
+</body>
+
+</html>
